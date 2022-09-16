@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  line-height: 1.5;
+  overflow-x: hidden;
+  background-color: #333;
+  font-family: "Lato", sans-serif;
+}
+main {
+  padding-bottom: 15vh;
+  background-color: #fff;
+  transform-origin: top left;
+  transition: transform 0.6s linear;
+}
+h1 {
+  color: #222;
+  margin-bottom: 0%;
+}
+span {
+  color: #555;
+  font-style: italic;
+  font-size: smaller;
+}
+p {
+  color: #333;
+  text-align: justify;
+}
+img {
+  max-width: 100%;
+}
+i {
+  font-size: 20px;
+}
+.container {
+  margin: 0 18vw;
+}
+.circle {
+  top: -100px;
+  left: -100px;
+  width: 200px;
+  height: 200px;
+  background: #ff6f61;
+  border-radius: 100%;
+  transition: transform 0.6s linear;
+  position: relative;
+}
+
+.circle i {
+  color: white;
+  font-size: 26px;
+  cursor: pointer;
+}
+#opening {
+  top: 125px;
+  left: 125px;
+  position: absolute;
+}
+#closing {
+  top: 125px;
+  left: 50px;
+  position: absolute;
+}
+main.rotate .circle {
+  transform: rotate(-70deg);
+}
+main.rotate {
+  transform: rotate(-20deg);
+}
+ul {
+  bottom: 80px;
+  position: fixed;
+  word-spacing: 10px;
+}
+li {
+  color: #fff;
+  line-height: 3;
+  font-weight: 500;
+  list-style-type: none;
+}
+.fa-envelope {
+  text-indent: 40px;
+}
+.fa-user-alt {
+  text-indent: 20px;
+}
+.hide {
+  opacity: 0;
+}
